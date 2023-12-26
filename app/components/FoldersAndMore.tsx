@@ -17,7 +17,7 @@ export default function FoldersAndMore() {
             <div className="bg-zinc-900 h-5/6 lg:h-2/3  w-11/12 lg: w-9/10 relative">
               <p
                 onClick={() => setOnFolder(false)}
-                className="text-red-400 text-4xl absolute end-0"
+                className="text-red-400 text-2xl absolute end-0 cursor-pointer w-12 bg-zinc-700 rounded text-center bg-opacity-75 hover:text-red-200 transition-all"
               >
                 X
               </p>
