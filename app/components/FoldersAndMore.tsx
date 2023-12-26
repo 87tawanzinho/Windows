@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import folder from "@/public/folder.png";
+import folderInside from "@/public/folder-inside.png";
 import { useState } from "react";
 export default function FoldersAndMore() {
   const [onFolder, setOnFolder] = useState(false);
@@ -21,6 +22,20 @@ export default function FoldersAndMore() {
               >
                 X
               </p>
+              <div className="flex gap-4 absolute left-2 top-10 lg:left-40 lg:top-40 flex-wrap cursor-default">
+                <div className="flex flex-col justify-center items-center text-gray-300  opacity-75  hover:bg-gray-400 w-32">
+                  <Image src={folderInside} alt="folder inside" />
+                  <p>Program Files</p>
+                </div>
+                <div className="flex flex-col justify-center items-center text-gray-300 opacity-75  hover:bg-gray-400 w-32">
+                  <Image src={folderInside} alt="folder inside" />
+                  <p>Records</p>
+                </div>
+                <div className="flex flex-col justify-center items-center text-gray-300 opacity-75 hover:bg-gray-400 w-32">
+                  <Image src={folderInside} alt="folder inside" />
+                  <p>UI</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
