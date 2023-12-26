@@ -31,7 +31,11 @@ export default function Footer() {
         </div>
 
         <div className="hover:bg-gray-500  hover:bg-opacity-50 p-2">
-          <Image src={vscode} alt="vscode" className="h-8 w-8" />
+          <Image
+            src={vscode}
+            alt="vscode"
+            className="h-8 w-8 border-b-2 border-gray-700 "
+          />
         </div>
       </div>
 
